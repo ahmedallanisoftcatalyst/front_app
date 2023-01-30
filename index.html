@@ -4,7 +4,7 @@
     <meta name="appleid-signin-scope" content="email" />
     <meta
       name="appleid-signin-redirect-uri"
-      content="https://ahmedallanisoftcatalyst.github.io/front_app/"
+      content="ahmedallanisoftcatalyst.github.io/front_app/"
     />
     <meta name="appleid-signin-use-popup" content="true" />
   </head>
@@ -23,13 +23,13 @@
       // Listen for authorization success.
       document.addEventListener("AppleIDSignInOnSuccess", (event) => {
         // Handle successful response.
-        console.log(event.detail.data);
+        console.log(event.detail);
       });
 
       // Listen for authorization failures.
       document.addEventListener("AppleIDSignInOnFailure", (event) => {
         // Handle error.
-        console.log(event.detail.error);
+        console.log(event.detail);
       });
     </script>
   </body>
